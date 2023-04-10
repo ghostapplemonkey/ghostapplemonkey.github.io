@@ -4,5 +4,4 @@ You can enjoy playing games here!!
 
 [Golf game](Amazing_golfgame)
 
-
-[play](Amazzzzzing_golfgame_v1/index.html)
+[Click here to play](Amazzzzzing_golfgame_v1/index.html)
