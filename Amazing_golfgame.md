@@ -52,6 +52,10 @@ if(Input.GetKey("space")){
     club.transform.localScale = new Vector3(0.5f, 0.5f, power);
 }else{    
     ballrb.AddForce(transform.forward*force*power, ForceMode.Impulse);
+    if(power!=0){
+        score+=1;
+        GameObject.Find("Hit").GetComponent<TextMeshPro>().text = "Hit : "+score.ToString();
+    }
     power = 0;
     clubmr.enabled=false;
 }
