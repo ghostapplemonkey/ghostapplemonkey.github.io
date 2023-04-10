@@ -12,7 +12,7 @@ Instructions
   - You will win when you push your ball into the hole.
   - In some parts of the level, you will have to jump to another platform.
 
-[Click Here to Play](file:///C:/Users/peanuts-english/Desktop/Amazzzzzing_golfgame_v1/index.html)
+[Click Here to Play]
   
 How it works
 ------------
