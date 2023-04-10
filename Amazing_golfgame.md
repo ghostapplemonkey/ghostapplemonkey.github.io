@@ -16,7 +16,8 @@ Instructions
   
 How it works
 ------------
-Camera following code:
+
+This code allows the camera to follow the ball:
 
 ~~~c#
 public GameObject ball;
@@ -27,9 +28,10 @@ void LateUpdate()
 }
 ~~~
 
-Adding force to the ball code:
-  - clubmr is the mesh renderer of the club which shows the power of the ball.
-  - power will increase and decrease when you hold the space in line 34~49.
+The following code shows how we add force to the ball.
+  - `clubmr` is the mesh renderer of the club which shows the power of the ball.
+  - The power will increase and decrease when you hold the space key (controlled by the variable `is_increase`).
+  - `Time.deltaTime` allow us play this game on different computer, even the speed of computer is different, it feels same in the game.
 
 ~~~c#
 if(Input.GetKey("space")){ 
@@ -57,7 +59,9 @@ if(Input.GetKey("space")){
 ~~~
 
 Level restart code :
-  - SampleScene is level 1.
+  - `SampleScene` is level 1.
+  - `y<-10` checks the ball's y, if the ball fall from the levels, this code can checks it and restart the level.
+
 ~~~c#
 if(ball.transform.position.y<-10){
     SceneManager.LoadScene("SampleScene");
@@ -65,7 +69,7 @@ if(ball.transform.position.y<-10){
 ~~~
 
 Camera rotate code :
-  - localEulerAngles is use for changing the rotation of the ball.
+  - `localEulerAngles` is used for changing the rotation of the ball.
 
 ~~~c#
 if(Input.GetKey("left")){
@@ -79,8 +83,8 @@ if(Input.GetKey("right")){
 ~~~
 
 
-This is the setting of the golfball :
-  - I add some bouncy material to the ball, make it more realistic.
+These are the settings of the golfball :
+  - I added some bouncy material to the ball to make it more realistic.
 
 ![ballphysicmaterial](https://user-images.githubusercontent.com/87847262/230895362-416db75e-d009-419a-8629-4b31fd9e4f62.jpg)
 ![ballrb](https://user-images.githubusercontent.com/87847262/230895669-da459d42-7050-4732-b462-6376832ad9e8.jpg)
