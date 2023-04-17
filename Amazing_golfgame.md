@@ -31,7 +31,7 @@ void LateUpdate()
 The following code shows how we add force to the ball.
   - `clubmr` is the mesh renderer of the club which shows the power of the ball.
   - The power will increase and decrease when you hold the space key (controlled by the variable `is_increase`).
-  - `Time.deltaTime` allow us play this game on different computer, even the speed of computer is different, it feels same in the game.
+  - `Time.deltaTime` allows us play this game on different computer, even the speed of computer is different, it feels same in the game.
 
 ~~~c#
 if(Input.GetKey("space")){ 
@@ -64,7 +64,7 @@ if(Input.GetKey("space")){
 
 Level restart code :
   - `SampleScene` is level 1.
-  - `y<-10` checks the ball's y, if the ball fall from the levels, this code can checks it and restart the level.
+  - `y<-10` checks the ball's y, if the ball fall from the level, this code can check it and restart the level.
 
 ~~~c#
 if(ball.transform.position.y<-10){
